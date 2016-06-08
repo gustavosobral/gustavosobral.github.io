@@ -3,7 +3,6 @@ My personal website
 
 ## To-do
 
-* Finalize about and skills sections
 * Fix responsive layout bugs
 * Write sections content
 * Add footer

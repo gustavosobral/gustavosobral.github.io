@@ -2,6 +2,11 @@ nav a,
 nav ul a,
 nav .brand-logo { color: #6d4c41 !important; }
 
+.chip { margin-bottom: 5px; }
+
+#about {}
+  #about #about-img-wrapper { padding: 25px 0 25px 35px; }
+
 #experience { background-color: #eee; }
 
 #content {
@@ -86,5 +91,5 @@ h1.header {
   .timeline p { padding-top: 20px; }
 }
 
-#skills {}
+#skills { padding-bottom: 30px; }
   #skills i { color: #6d4c41; }
