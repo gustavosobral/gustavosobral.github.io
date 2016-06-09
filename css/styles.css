@@ -1,17 +1,33 @@
-nav a,
-nav ul a,
-nav .brand-logo { color: #6d4c41 !important; }
+/* General style */
+
+body { background-color: #fff; }
 
 .chip { margin-bottom: 5px; }
 
 .no-margin { margin: 0; }
 
+h1.header {
+  font-size: 50px;
+  line-height: 70px; }
+
+/* Navbar */
+
+nav a,
+nav ul a,
+nav .brand-logo { color: #6d4c41 !important; }
+
+/* Header section */
+
+/* About section */
+
 #about {}
-  #about #about-img-wrapper { padding: 25px 0 25px 35px; }
+  #about #about-img-wrapper { padding: 35px 0 25px 35px; }
 
 @media only screen and (max-width: 601px) {
   #about .content { text-align: center; }
 }
+
+/* Experience section */
 
 #experience { background-color: #eee; }
   #experience .content {
@@ -19,10 +35,6 @@ nav .brand-logo { color: #6d4c41 !important; }
   text-align: center; }
 
 section.timeline-outer { margin: 0 auto; }
-
-h1.header {
-  font-size: 50px;
-  line-height: 70px; }
 
 .timeline {
   border-left: 8px solid #6d4c41;
@@ -91,7 +103,11 @@ h1.header {
   .timeline .event:nth-child(2)::before { top: 81px; }
 }
 
+/* Skills section */
+
 #skills .col { margin-bottom: 30px; }
   #skills i { color: #6d4c41; }
+
+/* Footer */
 
 footer .links i { margin: 20px 5px 5px 5px;}
