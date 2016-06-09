@@ -9,9 +9,12 @@ nav .brand-logo { color: #6d4c41 !important; }
 #about {}
   #about #about-img-wrapper { padding: 25px 0 25px 35px; }
 
-#experience { background-color: #eee; }
+@media only screen and (max-width: 601px) {
+  #about .content { text-align: center; }
+}
 
-#content {
+#experience { background-color: #eee; }
+  #experience .content {
   margin-top: 50px;
   text-align: center; }
 
