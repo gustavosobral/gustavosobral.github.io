@@ -86,7 +86,7 @@ h1.header {
   .timeline .event:nth-child(2)::before { top: 81px; }
 }
 
-#skills { padding-bottom: 30px; }
+#skills .col { margin-bottom: 30px; }
   #skills i { color: #6d4c41; }
 
 footer .links i { margin: 20px 5px 5px 5px;}
