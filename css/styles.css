@@ -4,6 +4,8 @@ nav .brand-logo { color: #6d4c41 !important; }
 
 .chip { margin-bottom: 5px; }
 
+.no-margin { margin: 0; }
+
 #about {}
   #about #about-img-wrapper { padding: 25px 0 25px 35px; }
 
