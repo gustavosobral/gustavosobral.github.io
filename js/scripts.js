@@ -1,5 +1,7 @@
 (function($){
 
+  new WOW().init();
+
   $('a.page-scroll').bind('click', function(event) {
     var $element = $(this);
     $('html, body').stop().animate({
