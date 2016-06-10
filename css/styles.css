@@ -38,9 +38,14 @@ nav .brand-logo { color: #6d4c41 !important; }
 /* About section */
 
 #about {}
-  #about #about-img-wrapper { padding: 35px 0 25px 35px; }
+  #about #about-img-wrapper {
+    padding: 30px 0;
+    text-align: center; }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 993px) {
+  #about #about-img-wrapper {
+    margin: 10px 0 25px 0;
+    padding: 0; }
   #about .content { text-align: center; }
 }
 
