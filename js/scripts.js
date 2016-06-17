@@ -1,6 +1,7 @@
 (function($){
 
-  new WOW().init();
+  var wow = new WOW({});
+  wow.init();
 
   $('a.page-scroll').bind('click', function(event) {
     var $element = $(this);
