@@ -10,6 +10,10 @@
     event.preventDefault();
   });
 
+  $('#nav-mobile a').click(function(){
+    $('.button-collapse').click();
+  });
+
   $(function(){
 
     $('.button-collapse').sideNav();
