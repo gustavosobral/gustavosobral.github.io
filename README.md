@@ -3,7 +3,6 @@ My personal website
 
 ## To-do
 
-* Fix responsive layout bugs
 * Write sections content
 * Use SASS instead of CSS
 * Configure a task to concatenate and minify the used assets
