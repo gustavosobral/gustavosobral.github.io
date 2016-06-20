@@ -1,5 +1,11 @@
 (function($){
 
+  // Configure "back to top" button behavior
+  var offset = 400,
+  offset_opacity = 900,
+  scroll_top_duration = 700,
+  $back_to_top = $('.cd-top');
+
   var wow = new WOW({});
   wow.init();
 
@@ -13,6 +19,23 @@
 
   $('#nav-mobile a').click(function(){
     $('.button-collapse').click();
+  });
+
+  // Hide or show the "back to top" button
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    if( $(this).scrollTop() > offset_opacity ) { 
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
+
+  // Smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      }, scroll_top_duration
+    );
   });
 
   $(function(){
