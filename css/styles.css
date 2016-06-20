@@ -118,11 +118,11 @@ section.timeline-outer { margin: 0 auto; }
 }
 
 @media (max-width: 329px) {
-  .timeline .event:nth-child(3)::before { top: 81px; }
+  .timeline .event:nth-child(4)::before { top: 81px; }
 }
 
 @media (max-width: 345px) {
-  .timeline .event:nth-child(2)::before { top: 81px; }
+  .timeline .event:nth-child(3)::before { top: 81px; }
 }
 
 /* Skills section */
