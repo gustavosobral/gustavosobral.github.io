@@ -1,3 +1,24 @@
+/* Mixins */
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin transition($effect, $duration, $time) {
+  -webkit-transition: $effect $duration $time;
+  -moz-transition: $effect $duration $time;
+  -o-transition: $effect $duration $time;
+  transition: $effect $duration $time;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
 /* General style */
 
 body { background-color: #fff; }
@@ -22,16 +43,10 @@ body { background-color: #fff; }
   height: 60px;
   text-indent: -9999px;
   background: #6d4c41 url('../images/top-arrow.svg') no-repeat center 50%;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
-  -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
-  -webkit-transition: opacity .3s 0s;
-  -moz-transition: opacity .3s 0s;
-  -o-transition: opacity .3s 0s;
-  transition: opacity .3s 0s;
+  border: 1px solid #290b00;
+  @include border-radius(30px);
+  @include box-shadow(0, 0, 15px, 0, rgba(0,0,0,.5));
+  @include transition(opacity, .3s, 0s);
 }
 
 .cd-top:hover { opacity: 1; }
